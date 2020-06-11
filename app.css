@@ -1,0 +1,27 @@
+/* h1 {
+    color: #94072f;
+    background-color: black;
+} */
+
+h1 {
+    color: rgba(148, 7, 47, 1)
+}
+
+li {
+    color: rgb(0, 0, 0);
+}
+
+h4 {
+    color: rgb(0, 0, 0);
+}
+
+/* body {
+    background: url(https://media.graytvinc.com/images/810*465/Aggies+Football+810x465+2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+body {
+    background: rgba(0, 0, 0, 0.144);
+    border: 8px dashed rgba(148,7,47,1)
+}

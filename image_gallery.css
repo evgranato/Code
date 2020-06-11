@@ -1,0 +1,19 @@
+img {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+img:hover {
+    opacity: .5;
+}
+
+h1 {
+    font-family: Raleway;
+    margin-left: 1.66%;
+    font-size: 45px;
+    font-wieght: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid #F1F1F1;
+    width: 30%;
+    padding-bottom: 20px;
+}
