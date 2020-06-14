@@ -34,17 +34,17 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div id="headingGroup" class="text-white text-center d-none d-lg-block mt-5">
-                <h1 class="">MUSEUM<span>/</span> OF<span>/</span> CANDY</h1>
-                <h1 class="">MUSEUM<span>/</span> OF<span>/</span> CANDY</h1>
-                <h1 class="">MUSEUM<span>/</span> OF<span>/</span> CANDY</h1>
-                <h1 class="">MUSEUM<span>/</span> OF<span>/</span> CANDY</h1>
-                <h1 class="">MUSEUM<span>/</span> OF<span>/</span> CANDY</h1>
-                <h1 class="">MUSEUM<span>/</span> OF<span>/</span> CANDY</h1>
-                <h1 class="">MUSEUM<span>/</span> OF<span>/</span> CANDY</h1>
+                <h1 class="">MUSEUM<span>/</span>OF<span>/</span> CANDY</h1>
+                <h1 class="">MUSEUM<span>/</span>OF<span>/</span> CANDY</h1>
+                <h1 class="">MUSEUM<span>/</span>OF<span>/</span> CANDY</h1>
+                <h1 class="">MUSEUM<span>/</span>OF<span>/</span> CANDY</h1>
+                <h1 class="">MUSEUM<span>/</span>OF<span>/</span> CANDY</h1>
+                <h1 class="">MUSEUM<span>/</span>OF<span>/</span> CANDY</h1>
+                <h1 class="">MUSEUM<span>/</span>OF<span>/</span> CANDY</h1>
               </div>
             </div>
-            <div class="col-6">
-              <img class="img-fluid" src="imgs/hand2.png" alt="">
+            <div class="col-md-6">
+              <img src="imgs/hand2.png" alt="" class="img-fluid">
             </div>
 
           </div>
@@ -52,14 +52,14 @@
         </section>
 
         <section class="container-flud px-0">
-          <div class="row align-items-center">
+          <div class="row align-items-center content">
             <div class="col-md-6 order-2 order-md-1">
               <img src="imgs/milk.png" alt="" class="img-fluid">
             </div>
 
-            <div id="content2" class="col-md-6 text-center order-1 order-md-2">
+            <div class="col-md-6 text-center order-1 order-md-2">
               <div class="row justify-content-center">
-                <div class="col-10 col-lg-8"></div>
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                   <h2>MUSEUM OF CANDY</h2>
                   <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
                   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque autem tempore ipsam doloribus quisquam ipsa voluptatum quos, sit inventore voluptates cupiditate sapiente, dolore quibusdam beatae necessitatibus eligendi. Esse, laboriosam praesentium!</p>
@@ -68,19 +68,64 @@
               </div>
               
             </div>
-            
           </div>
 
+        </section>
 
+        <section class="container-flud px-0">
+          <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-2">
+              <img src="imgs/gumball.png" alt="" class="img-fluid">
+            </div>
 
+            <div class="col-md-6 text-center order-1 order-md-1">
+              <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                  <h2>MUSEUM OF CANDY</h2>
+                  <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque autem tempore ipsam doloribus quisquam ipsa voluptatum quos, sit inventore voluptates cupiditate sapiente, dolore quibusdam beatae necessitatibus eligendi. Esse, laboriosam praesentium!</p>
+                </div>
 
-
+              </div>
+              
+            </div>
+          </div>
+          
         </section>
           
+        <section class="container-flud px-0">
+          <div class="row align-items-center content">
+            <div class="col-md-6 order-2 order-md-1">
+              <img src="imgs/sprinkles.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-md-6 text-center order-1 order-md-2">
+              <div class="row justify-content-center">
+                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                  <h2>MUSEUM OF CANDY</h2>
+                  <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque autem tempore ipsam doloribus quisquam ipsa voluptatum quos, sit inventore voluptates cupiditate sapiente, dolore quibusdam beatae necessitatibus eligendi. Esse, laboriosam praesentium!</p>
+                </div>
+
+              </div>
+              
+            </div>
+          </div>
+          
+        </section>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+  $(function() {
+    $(document).scroll(function(){
+      var $nav = $("#mainNavbar");
+      $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+
+    })
+  })
+</script>
 </body>
 </html>
