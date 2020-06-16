@@ -1,8 +1,5 @@
-let userFirstName = prompt("What is your first name?");
-let userLastName = prompt("What's your last name?");
-let userAge = prompt("How old are you?");
+let userAge = prompt("How many years old are you?");
 
-let fullName = userFirstName + " " + userLastName;
+let ageDays = userAge * 365.25;
 
-console.log("Nice to meet you, " + fullName);
-console.log("You are " + userAge +" years old.")
+alert("You are roughly " + ageDays +" days old.")
