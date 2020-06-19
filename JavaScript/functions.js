@@ -9,8 +9,19 @@
 // }
 // sayHi();
 
-let num = Number(prompt("Give me a number"));
-function square(num) {
-    console.log(num * num);
+// let num = Number(prompt("Give me a number"));
+// function square(num) {
+//     console.log(num * num);
+// }
+// square(num)
+
+// function square(x) {
+//     return x * x;
+// }
+
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
 }
-square(num)
+
+// let city = "paris";
+// let capital = capitalize(city);
