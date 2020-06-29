@@ -1,0 +1,9 @@
+.big {
+    font-size: 100px;
+    color: orange;
+    border: 5px solid red;
+}
+
+.done {
+    text-decoration: line-through;
+}
