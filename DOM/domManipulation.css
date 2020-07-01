@@ -7,3 +7,12 @@
 .done {
     text-decoration: line-through;
 }
+
+.first {
+    align-content: flex-end;
+    width: 100px;
+}
+
+.second {
+    align-content: flex-start;
+}

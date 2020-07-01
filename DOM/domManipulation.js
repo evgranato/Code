@@ -27,9 +27,9 @@
 
 // p.classList.toggle("done");
 
-var p = document.getElementsByTagName("p")[0];
+// var p = document.getElementsByTagName("p")[0];
 
-var ul = document.querySelector("ul");
+// var ul = document.querySelector("ul");
 
 // p.innerHTML;
 // SHOWS THE INNER HTML TAGS LIKE THE <STRONG> TAG IN THE <P>
@@ -40,5 +40,23 @@ var ul = document.querySelector("ul");
 
 
 // var links = document.querySelectorAll("a");
-// =or(i = 0; i < links.length; i++) {
+// for(i = 0; i < links.length; i++) {
 //         links[i].setAttribute("href", "http://thedonald.win")}
+
+// DOM EVENTS //
+
+// element.addEventListener(type, function to call)
+
+var button = document.querySelector("button");
+var paragraph = document.getElementsByTagName("p")[1]
+button.addEventListener("click", function() {
+    paragraph.textContent = "SOMEONE CLICKED THE BUTTON!";
+})
+
+var lis = document.querySelectorAll("li")
+
+for(i = 0; i < lis.length; i++) {
+    lis[i].addEventListener("click", function() {
+        this.style.setProperty("text-decoration", "line-through")
+    })
+}
