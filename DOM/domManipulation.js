@@ -34,3 +34,11 @@ var ul = document.querySelector("ul");
 // p.innerHTML;
 // SHOWS THE INNER HTML TAGS LIKE THE <STRONG> TAG IN THE <P>
 
+// var link = document.querySelector("a");
+
+// link.setAttribute("href", "www.dogs.com")
+
+
+// var links = document.querySelectorAll("a");
+// =or(i = 0; i < links.length; i++) {
+//         links[i].setAttribute("href", "http://thedonald.win")}
