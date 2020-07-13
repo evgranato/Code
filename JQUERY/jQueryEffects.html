@@ -6,7 +6,7 @@
     <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
     <title>jQuery Effects</title>
     <style type="text/css">
-        div {
+        #blocks{
             width: 100px;
             height: 100px;
             background-color: teal;
@@ -14,15 +14,20 @@
             margin: 20px;
             display: none;
         }
+        #buttonBlock {
+            text-align: center;
+        }
         
     </style>
 </head>
 <body>
-    <button>Click Me</button>
+    <div id="buttonBlock">
+        <button>Click Me</button>
+    </div>
 
-    <div>Please don't fade me</div>
-    <div>I'm begging you please</div>
-    <div>Help, help, help</div>
+    <div id="blocks">Please don't fade me</div>
+    <div id="blocks">I'm begging you please</div>
+    <div id="blocks">Help, help, help</div>
     
     <script type="text/javascript" src="jQueryEffects.js"></script>
 </body>
