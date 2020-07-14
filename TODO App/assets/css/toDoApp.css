@@ -1,0 +1,10 @@
+#container {
+    border: 2px solid grey;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.clicked {
+    text-decoration: line-through;
+    color: grey;
+}
