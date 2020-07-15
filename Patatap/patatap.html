@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/patatap.css">
+    <script type="text/javascript" src="assets/paperjs-v0/dist/paper-full.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+        var myCircle = new Path.Circle(new Point(100, 70), 50);
+        myCircle.strokeColor = 'black';
+        myCircle.selected = true;
+        myCircle.fillColor = "black";
+
+        var myCircle2 = new Path.Circle(new Point(50, 50), 300);
+        myCircle2.strokeColor = 'black';
+        myCircle2.selected = true;
+        myCircle2.fillColor = "green";
+    </script>
+    <title>Patatap</title>
+</head>
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+</html>
