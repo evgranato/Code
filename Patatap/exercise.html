@@ -7,13 +7,20 @@
     <script type="text/javascript" src="assets/js/exercise.js"></script>
     <script type="text/javascript" src="assets/paperjs-v0/dist/paper-full.js"></script>
     <script type="text/paperscript" canvas="myCanvas">
-        for(var x = 0; x < 1000; x+=100) {
-            for(var y = 0; y < 1000; y+=100) {
-                var circle2 = new Path.Circle(new Point(x, y), 10).fillColor = "purple";
-            }
+       
+        for(var i = 0; i < 1000; i+= 100) {
+            for(var y = 0; y < 1000; y += 100) {
+                var myCircle = new Path.Circle(new Point(i, y), 10);
+                myCircle.fillColor = 'blue';
+
         }
+    }
+
+    var myCircle2 = new Path.Circle(new Point(70, 70), 50)
+    myCircle2.fillColor = 'green'
+
     </script>
-    <title>Patatap</title>
+    <title>Exercise</title>
 </head>
 <body>
     <canvas id="myCanvas" resize></canvas>
