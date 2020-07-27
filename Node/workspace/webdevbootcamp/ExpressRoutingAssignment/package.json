@@ -1,7 +1,7 @@
 {
-  "name": "packagejsondemo",
+  "name": "expressroutingassignment",
   "version": "1.0.0",
-  "description": "Simple Package.json demo",
+  "description": "Express Assignment",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,6 @@
   "author": "Evan Granato",
   "license": "ISC",
   "dependencies": {
-    "cat-me": "^1.0.3",
     "express": "^4.17.1"
   }
 }

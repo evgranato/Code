@@ -15,6 +15,15 @@ app.get("/dog", function(req, res) {
     res.send("MEOW!")
 });
 
+app.get("/r/:subredditName", function(req, res) {
+    var subReddit = req.params.subredditName;
+    res.send("WELCOME TO THE " + subReddit.toUpperCase() + " SUBREDDIT!");
+})
+
+app.get("*" , function(req, res){
+    res.send("You Are A Star!")
+});
+
 // Tell Express to listen for requests (start server)
 
 //(process.env.PORT, process.env.IP) for goorm
