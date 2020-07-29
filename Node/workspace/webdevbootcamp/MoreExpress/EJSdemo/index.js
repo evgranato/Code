@@ -10,6 +10,15 @@ app.get("/fallinlovewith/:thing", function(req, res) {
     res.render("love.ejs", {thingVar: thing.toUpperCase()});
 })
 
+app.get("/posts", function(req, res) {
+    var posts = [
+        {title: "Post 1", author: "Suzy"},
+        {title: "My adorable pet bunny", author: "Charlie"},
+        {title: "Can you believe this pomsky", author: "Evan"}
+    ];
+    res.render("posts.ejs", {posts: posts});
+})
+
 app.listen(3000, function() {
     console.log("SERVER STARTED")
 });
