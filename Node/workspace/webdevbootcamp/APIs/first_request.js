@@ -2,6 +2,7 @@
 // const app = express();
 const axios = require("axios");
 
+
 // axios.get('https://jsonplaceholder.typicode.com/todos', function(error, response, body) {
 //     if(!error && response.statusCode == 200) {
 //         var parsedData= JSON.parse(body);
@@ -9,10 +10,15 @@ const axios = require("axios");
 //     }
 // });
 
-axios.get('https://jsonplaceholder.typicode.com/todos/1')
+// COLT USED JSON.parse TO PARSE THE STRING RETURNED INTO A JAVASCRIPT OBJECT
+
+axios.get('https://jsonplaceholder.typicode.com/users/')
   .then(function (response) {
     // handle success
-    console.log(response.data);
+    var data = response.data
+    for(var i = 0; i < data.length; i++) {
+      console.log(data[i].email)
+    };
   })
   .catch(function (error) {
     // handle error
