@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-  res.render("Home");
+  res.render("search");
 });
 
 app.post("/results", function(req, res) {
@@ -18,7 +18,9 @@ app.post("/results", function(req, res) {
 });
 
 app.get("/results", function(req, res) {
-  axios.get('http://www.omdbapi.com/?s=guardians+of+the+galaxy&apikey=thewdb')
+  var query = req.query.search;
+  var url = "http://www.omdbapi.com/?s=" + query + "&apikey=thewdb"
+  axios.get(url)
     .then(function (response) {
         // handle success
         var data = response.data

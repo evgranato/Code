@@ -2,6 +2,8 @@
 
 
 <% for(var i = 0; i < data['Search'].length; i++) { %>
-    <% var titles = data['Search'][i]['Title']; %> 
-    <li> <%= titles %> </li>
+    <% var titles = data['Search'][i]; %> 
+    <li> <strong><%= titles['Title'] %></strong> - <%= titles['Year'] %></li>
 <% }; %>
+
+<a href="/">Search Again</a>
