@@ -1,0 +1,13 @@
+<%- include ("partials/header") %>
+
+<h1>Show EJS</h1>
+
+<p><%=campground.name%></p>
+
+<img src="<%= campground.image %>">
+
+<p><%= campground.description %></p>
+
+<a href="/campgrounds/" class="btn btn-primary" role="button">Go Back</a>
+
+<%- include ("partials/footer") %>

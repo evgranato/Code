@@ -12,12 +12,15 @@ app.set("view engine", "ejs")
 //Schema Setup//
 var campgroundSchema = new mongoose.Schema({
     name: String,
-    image: String
+    image: String,
+    description: String
 });
 
 var Campground = mongoose.model("Campground", campgroundSchema);
 
-// Campground.create({name: "Granite Hill", image: "https://blog-assets.thedyrt.com/uploads/2018/06/freecampingspot-2000x1120.jpg"
+// Campground.create({name: "Granite Hill", 
+//                     image: "https://blog-assets.thedyrt.com/uploads/2018/06/freecampingspot-2000x1120.jpg",
+//                     description: "This is a huge hill, no bathrooms. No water. Beautiful Granite"
 //                 }, function(err, campground){
 //                     if (err){
 //                         console.log(err)
@@ -36,6 +39,7 @@ app.get("/", function(req, res) {
     res.render("landing")
 });
 
+// INDEX ROUTE - VIEW ITEMS
 app.get("/campgrounds", function(req, res) {
     //Get all campgrounds from DB
     Campground.find({}, function(err, allCampgrounds){
@@ -43,14 +47,16 @@ app.get("/campgrounds", function(req, res) {
             console.log(err);
         } else {
             //res.render("campgrounds", {campgrounds:campgrounds})
-            res.render("campgrounds", {campgrounds:allCampgrounds})
+            res.render("index", {campgrounds:allCampgrounds})
         }
 })});
 
+// CREATE ROUTE - SUBMIT 
 app.post("/campgrounds", function(req, res) {
     var name = req.body.name;
     var image = req.body.image;
-    var newCampground = {name: name, image: image}
+    var description = req.body.description;
+    var newCampground = {name: name, image: image, description: description}
     Campground.create(newCampground, function(err, newlyCreated){
         if(err){
             console.log(err);
@@ -60,10 +66,25 @@ app.post("/campgrounds", function(req, res) {
     });
 });
 
+// NEW ROUTE - SHOW FORM
 app.get("/campgrounds/new", function(req, res) {
     res.render("new.ejs");
 });
 
 app.listen(3000, function() {
     console.log("YelpCamp Server Running")
+});
+
+// SHOW ROUTE - SHOW INFO ABOUT AN ITEM
+app.get("/campgrounds/:id", function(req, res){
+    // FIND CAMPGROUND WITH PROVIDED ID
+    Campground.findById(req.params.id, function(err, foundCampground){
+        if(err){
+            console.log(err);
+        } else {
+    // RENDER SHOW TEMPLATE WITH THAT CAMPGROUND
+            res.render("show", {campground: foundCampground});
+        }
+    });
+    
 });
