@@ -7,7 +7,8 @@ mongoose.connect("mongodb://localhost/yelp_camp", {useNewUrlParser: true, useUni
 
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.set("view engine", "ejs")
+app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 //Schema Setup//
 var campgroundSchema = new mongoose.Schema({
@@ -71,10 +72,6 @@ app.get("/campgrounds/new", function(req, res) {
     res.render("new.ejs");
 });
 
-app.listen(3000, function() {
-    console.log("YelpCamp Server Running")
-});
-
 // SHOW ROUTE - SHOW INFO ABOUT AN ITEM
 app.get("/campgrounds/:id", function(req, res){
     // FIND CAMPGROUND WITH PROVIDED ID
@@ -87,4 +84,8 @@ app.get("/campgrounds/:id", function(req, res){
         }
     });
     
+});
+
+app.listen(3000, function() {
+    console.log("YelpCamp Server Running")
 });
