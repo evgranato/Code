@@ -4,3 +4,7 @@ i.icon {
 #container {
     padding-top: 75px;
 }
+
+#delete {
+    display: inline;
+}
