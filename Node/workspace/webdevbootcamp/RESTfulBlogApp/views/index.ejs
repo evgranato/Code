@@ -3,19 +3,21 @@
 
 
 <% blogs.forEach(function(blog) {%>
-    <div class="ui container"id="container">
+    <div class="ui main text container segment"id="container">
         <div class="ui huge header">
             <h2><%=blog.title%></h2>
         </div>
         <div class="ui top attached">
-            <div class="item">
-                <img class="ui left round image large"src="<%=blog.image%>" alt="">
-            </div>
-            <div class="content">
-                <span><%=blog.created.toDateString()%></span>
-                <p><%-blog.body.substring(0, 100)%>...</p>
-                <a href="/blogs/<%=blog._id%>">Read More</a>
-            </div>
+            
+                <div class="item">
+                    <img class="ui centered rounded image large"src="<%=blog.image%>" alt="">
+                </div>
+                <div class="content">
+                    <span><%=blog.created.toDateString()%></span>
+                    <p><%-blog.body.substring(0, 100)%>...</p>
+                    <a class="ui floated basic violet button" href="/blogs/<%=blog._id%>">Read More</a>
+                </div>
+            
         </div>
         
         
