@@ -2,7 +2,7 @@
 
 
 
-<% bb.forEach(function(bb) {%>
+<!-- <% bb.forEach(function(bb) {%>
     <div class="ui main text container segment"id="container">
         <div class="ui huge header">
             <h2><%=bb.title%></h2>
@@ -23,6 +23,32 @@
         
     </div>
 
+<% }) %> -->
+
+<% bb.forEach(function(bb) {%>
+    <div class="ui grid">
+        <div class="column">
+            <div class="ui main text container segment"id="container">
+                <div class="ui huge header">
+                    <h2><%=bb.title%></h2>
+                </div>
+                <div class="ui top attached">
+                    
+                        <div class="item">
+                            <img class="ui centered rounded image large"src="<%=bb.image%>" alt="">
+                        </div>
+                        <div class="content">
+                            <span><%=bb.created.toDateString()%></span>
+                            <p><%-bb.body.substring(0, 100)%>...</p>
+                            <a class="ui floated basic violet button" href="/backblasts/<%=bb._id%>">Read More</a>
+                        </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
 <% }) %>
 
 <%- include("partials/footer") %>

@@ -32,7 +32,7 @@ var BB = mongoose.model("BB", bbSchema);
 //RESTFUL ROUTES
 //INDEX
 app.get("/", function(req, res) {
-    res.redirect("/backblasts");
+    res.render("landing");
 });
 
 app.get("/backblasts", function(req, res) {

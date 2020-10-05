@@ -10,7 +10,7 @@ i.icon {
     
 }
 
-body {
+.pushable {
     background-color: black;
 }
 
@@ -24,4 +24,24 @@ body {
 
 .ui.menu .header.item, .ui.vertical.menu .header.item {
     color: black;
+}
+
+.ui.inverted.header {
+    padding-top: 100px;
+    color: white;
+    /* background-color: black; */
+    text-align: center;
+    font-size: 100px
+}
+
+#tagline {
+    color: white;
+    /* background-color: black; */
+    text-align: center;
+    font-size: x-large;
+}
+
+.landing-image {
+    background-image: url("https://f3natx.com/wp-content/uploads/2019/12/E94AB558-FABB-4971-B8F3-429B02746D68-scaled.jpeg");
+    background-size: cover;
 }
