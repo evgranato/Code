@@ -38,10 +38,31 @@ i.icon {
     color: white;
     /* background-color: black; */
     text-align: center;
-    font-size: x-large;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.ui.landing-image.fluid.container {
+    height: 1000px;
+}
+
+.ui.inverted.header {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 150px;
 }
 
 .landing-image {
     background-image: url("https://f3natx.com/wp-content/uploads/2019/12/E94AB558-FABB-4971-B8F3-429B02746D68-scaled.jpeg");
     background-size: cover;
+}
+
+.ui.two.column.doubling.stackable.grid.container {
+    background-color: white;
+    margin-top: 10px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+#f3 {
+    padding-top: 100px;
+
 }
