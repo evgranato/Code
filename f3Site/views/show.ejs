@@ -1,0 +1,25 @@
+<%- include("partials/header")%>
+<div class="ui main text container segment" id="container">
+    <div class="ui huge header"><%=bb.title%></div>
+    <div class="ui top attached">
+        <div class="item">
+            <img class="ui centered rounded image" src="<%=bb.image%>" alt="">
+        </div>
+        <div class="content">
+            <span><%=bb.created.toDateString()%></span>
+        </div>
+        <div class="description">
+            <p><%-bb.body%></p>
+        </div>
+        <div class="ui items">
+            <a class="ui orange basic button" href="/backblasts/<%=bb._id%>/edit">Edit</a>
+            <form id="delete" method="POST" action="/backblasts/<%=bb._id%>?_method=DELETE">
+                <button class="ui red basic button">Delete</button>
+            <a class="ui violet basic button" href="/backblasts">Go Back</a>
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+<%- include("partials/footer")%>

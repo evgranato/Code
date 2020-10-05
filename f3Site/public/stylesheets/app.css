@@ -1,0 +1,27 @@
+i.icon {
+    font-size: 2em;
+}
+#container {
+    padding-top: 75px;
+}
+
+#delete {
+    display: inline;
+    
+}
+
+body {
+    background-color: black;
+}
+
+#top-bar {
+    background-color: white;
+    color: black;
+}
+.ui.menu .header.item, .ui.vertical.menu .header.item {
+    color: black;
+}
+
+.ui.menu .header.item, .ui.vertical.menu .header.item {
+    color: black;
+}
